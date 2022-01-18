@@ -1,0 +1,242 @@
+/* Bootstrap3 is required for default styling */
+
+.parent {
+    float: left;
+    width: calc(100% - 5px);
+    height: 24px;
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    white-space: nowrap;
+}
+
+.mentiony-container [contenteditable=true]:empty:not(:focus):before {
+    content: attr(data-placeholder);
+    color: #999999;
+}
+
+.mentiony-container {
+    position: relative;
+    height: auto;
+    border: 1px solid #cecece;
+    /* NOTE: All top-right-bottom-left must be equal */
+    padding: 10px;
+}
+
+.mentiony-container .main-parent {
+    width: calc(100% - 53px);
+    float: left;
+    margin-left: 5px;
+}
+
+.mentiony-container .mention-input-hidden {
+    float: left;
+    display: inline-block;
+    visibility: hidden;
+    width: 0 !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    opacity: 0 !important;
+}
+
+.mentiony-container .mentiony-popover {
+    position: absolute;
+    z-index: 1000;
+    top: 100%;
+    left: 0; /* Default */
+    width: 280px;
+    /*height: auto;*/
+    max-height: 200px;
+    display: none;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 0;
+    background: #fefefe;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /*overflow: scroll; */
+}
+
+.mentiony-container .mentiony-content {
+    outline: none;
+}
+
+.mentiony-list {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.mentiony-item {
+    border-top: 1px solid #eee;
+    height: 50px;
+    /*padding: 5px 10px;*/
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.mentiony-item:first-child {
+    border: none
+}
+
+.mentiony-item:hover {
+    background: #ededed;
+}
+
+.mentiony-item.active {
+    background: #ddd;
+}
+
+.mentiony-item img {
+    width: 35px;
+    height: 35px;
+}
+
+.mentiony-item .title, .mentiony-item .info-block {
+    margin: 0;
+}
+
+.mentiony-item .title {
+    float: left;
+    margin-top: 6PX;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.mentiony-item .info-block {
+    float: left;
+    clear: left;
+}
+
+
+.mention-area .highlight a.mentiony-link {
+    color: #fff;
+    background: #247cbb;
+    padding: 1px 4px;
+    border-radius: 3px;
+    border-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*bootstrap css start here*/
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571;
+    color: #333;
+
+}
+
+.info-block {
+    display: block;
+    /*margin-top: 5px;*/
+    /*margin-bottom: 10px;*/
+    color: #737373;
+}
+
+.title {
+    display: block;
+    color: #080808;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+.col-lg-3 {
+    float: left;
+}
+
+.avatar {
+    float: left;
+    position: relative;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 8px 0px 0px 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%
+}
+
+.mentiony-container, .mentiony-content {
+    width: 100% !important;
+}
+
+.demo-item {
+    height: 300px;
+}
+
+.demo-item .demo, .demo-item .demo > * {
+    height: 100%;
+}
+
+.demo-item .code, .demo-item .code > * {
+    height: 100%;
+}
+
+.demo-item .code, .demo-item .code > pre > code {
+    padding: 0;
+    background: none
+}
+
+.demo-item .code > pre > code {
+    width: 999px !important;
+    display: block;
+}
+
+pre.prettyprint {
+    background-color: #693d3d !important;
+}
+
+.mentiony-content a {
+    color: black;
+    text-decoration: none;
+}
+
+.xMen {
+    border: none;
+    padding: 0 0 0 0;
+    height: 15px;
+    width: 15px;
+    line-height: 0;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    color: #bbbfe0;
+    background: #16537d;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.xMen:hover {
+    color: #fff;
+    background: #103753;
+}
+
+.main-parent {
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+
+.row {
+    position: relative;
+    float: left;
+    width: 270px;
+}
+
+/*index page css end*/
+
